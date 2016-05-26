@@ -1,0 +1,34 @@
+<p>
+  This is the very beautful <%= params['face-name'] %>
+  <br>
+  <br>
+  <img src="<%= params['face-url'] %>" alt="picture of face">
+  <br>
+  <br>
+  <%= params['face-name'] %> prefers <%= params['face-size'] %> faces and if <%= params['face-name'] %>
+  could go on a face-date with anyone who had the face of an animal, <%= params['face-name'] %> would prefer to go on someone with the face of a <%= params['animal-face'] %>.  <em>Isn't that interesting?</em>
+  <br>
+  <br>
+  While <%= params['face-name'] %>'s favorite part of the body is the face, <%= params['face-name'] %> also likes <%= params['non-face-body-part'] %>s.
+  <br>
+  <br>
+  <%= params['face-name'] %> describes his/her face as <%= params['face-description'] %> and if <%= params['face-name'] %> could send his/her face anywhere, he/she would send it to <%= params['face-place'] %>.
+  <br>
+  <br>
+  By the way, <%= params['face-name'] %> really likes to <%= params['express-yo-face'] %>
+</p>
+<br>
+<br>
+<p>Contact <%= params['face-name'] %> today!</p>
+<br>
+<br>
+ <form action="https://formspree.io/<%= params['face-mail'] %>"
+      method="POST">
+    What is your name?
+    <input type="text" name="name">
+    <br>
+    What email should your face-mate contact you at?
+    <input type="email" name="_replyto">
+    <br>
+    <input type="submit" value="Send FaceMail">
+</form>
