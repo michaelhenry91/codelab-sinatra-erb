@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>The Year Machine</title>
-  </head>
-  <body>
-    <p>Welcome to FaceDate - connecting the world, two faces at a time! (The current year is <%= Time.now.year %>, just in case you were wondering)</p>
-    <br>
+<head>
+  <meta charset="utf-8">
+  <title>The Year Machine</title>
+  <style>
+  .form-field-spacing {
+    padding-bottom: 90px;
+  }
+  </style>
+</head>
+<body>
+  <p>Welcome to FaceDate - connecting the world, two faces at a time! (The current year is <%= Time.now.year %>, just in case you were wondering)</p>
+  <br>
 
-    <p>Create a profile and then face off against competitors to swoon your perfect face-mate!</p>
+  <p>Create a profile and then face off against competitors to swoon your perfect face-mate!</p>
 
-    <form action="/profile">
+  <form action="/profile">
+    <div class= "form-field-spacing">
       Paste the URL of a picture of your face
-      <input name="face-url"><br>
+      <input name="face-url">
+    </div>
+    <div class= "form-field-spacing">
       What is your face name?
-      <input name="face-name"><br>
-      <br>
+      <input name="face-name">
+    </div>
+    <div class= "form-field-spacing">
       What is your email address?
-      <input name="face-mail"><br>
-      <br>
+      <input name="face-mail">
+    </div>
+    <div class= "form-field-spacing">
       Do you prefer big or small faces?
-      <input name="face-size"><br>
-      <br>
+      <input name="face-size">
+    </div>
+    <div class= "form-field-spacing">
       If you could be with someone who had the face of an animal, what animal-face would that person have?
-      <input name="animal-face"><br>
-      <br>
+      <input name="animal-face">
+    </div>
+    <div class= "form-field-spacing">
       What is your favorite non-face part of the body?
-      <input name="non-face-body-part"><br>
-      <br>
+      <input name="non-face-body-part">
+    </div>
+    <div class= "form-field-spacing">
       How would you best describe your face?
-      <input name="face-description"><br>
-      <br>
+      <input name="face-description">
+    </div>
+    <div class= "form-field-spacing">
       If your face could go anywhere in the world, where would you send it?
-      <input name="face-place"><br>
-      <br>
+      <input name="face-place">
+    </div>
+    <div class= "form-field-spacing">
       What is your favorite expression to make with your face?
-      <input name="express-yo-face"><br>
-      <br>
+      <input name="express-yo-face">
+    </div>
+    <div class= "form-field-spacing">
       <button type="submit">Generate Madlib</button>
-      <br>
     </form>
 
   </body>
-</html>
+  </html>
